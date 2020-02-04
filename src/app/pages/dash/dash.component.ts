@@ -130,7 +130,7 @@ export class DashComponent implements OnInit {
           },
           {
             name: 'Windy',
-            url: 'https://www.teslafi.com/',
+            url: 'https://www.windy.com/',
             color: '#212121',
             logo: 'https://www.jing.fm/clipimg/full/259-2590672_windy-com-logo-png.png',
             category: CategoryType.Weather,
