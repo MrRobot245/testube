@@ -7,6 +7,8 @@ export enum CategoryType {
   Gaming,
   Sports,
   Utility,
+  Weather,
+  Mapping
 }
 
 export interface CardProvider {

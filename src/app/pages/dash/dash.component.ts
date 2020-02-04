@@ -84,6 +84,33 @@ export class DashComponent implements OnInit {
         ]
       },
       {
+        title: 'Mapping',
+        providers : [
+          {
+            name: 'Google Maps',
+            url: 'https://maps.google.com/',
+            color: '#1c9957',
+            logo: 'https://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png',
+            category: CategoryType.Mapping,
+          },
+          {
+            name: 'Waze',
+            url: 'https://waze.com/livemap',
+            color: '#47cfee',
+            logo: 'https://pngimg.com/uploads/waze/waze_PNG23.png',
+            category: CategoryType.Mapping,
+          },
+          {
+            name: 'ABetterRoutePlanner',
+            url: 'https://new.abetterrouteplanner.com',
+            color: '#2196f3',
+            logo: 'https://new.abetterrouteplanner.com/abrp_banner.png',
+            category: CategoryType.Mapping,
+          },
+  
+        ]
+      },
+      {
         title: 'Utility',
         providers : [
          
@@ -95,47 +122,36 @@ export class DashComponent implements OnInit {
             category: CategoryType.Utility,
           },
           {
-            name: 'Dark Sky',
-            url: 'https://maps.darksky.net/',
-            color: '#121212',
-            logo: 'https://darksky.net/images/darkskylogo.png',
-            category: CategoryType.Utility,
-          },
-        ]
-      },
-      {
-        title: 'Mapping',
-        providers : [
-          {
-            name: 'Google Maps',
-            url: 'https://maps.google.com/',
-            color: '#1c9957',
-            logo: 'https://pluspng.com/img-png/google-maps-png-google-maps-icon-1600.png',
-            category: CategoryType.Utility,
-          },
-          {
-            name: 'Waze',
-            url: 'https://waze.com/livemap',
-            color: '#47cfee',
-            logo: 'https://pngimg.com/uploads/waze/waze_PNG23.png',
-            category: CategoryType.Utility,
-          },
-          {
-            name: 'ABetterRoutePlanner',
-            url: 'https://new.abetterrouteplanner.com',
-            color: '#2196f3',
-            logo: 'https://new.abetterrouteplanner.com/abrp_banner.png',
-            category: CategoryType.Utility,
-          },
-          {
             name: 'Plugshare',
             url: 'https://www.plugshare.com/',
             color: '#003ca6',
             logo: 'https://assets.plugshare.com/assets/plugshare-web.png',
             category: CategoryType.Utility,
           },
+          {
+            name: 'Windy',
+            url: 'https://www.teslafi.com/',
+            color: '#212121',
+            logo: 'https://www.jing.fm/clipimg/full/259-2590672_windy-com-logo-png.png',
+            category: CategoryType.Weather,
+          },
+          {
+            name: 'Dark Sky',
+            url: 'https://maps.darksky.net/',
+            color: '#121212',
+            logo: 'https://darksky.net/images/darkskylogo.png',
+            category: CategoryType.Weather,
+          },
         ]
-      }
+      },
+
+      // {
+      //   title: 'Weather',
+      //   providers : [
+         
+
+      //   ]
+      // }
     ]
   }
 
