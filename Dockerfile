@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 ENV NG_CLI_ANALYTICS=ci
-RUN npm install && export NG_CLI_ANALYTICS=ci && ng build --prod
+RUN export NG_CLI_ANALYTICS=ci && npm install ng build --prod
 
 FROM nginx:alpine
 
