@@ -7,7 +7,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'testube';
+  title = 'Tesla Theater';
   teslaUserAgentRegEx = /Tesla\/([0-9]{4}.[0-9]{2}.[0-9]{2}.[0-9]{1,2})-(.{7})/g;
   isFullscreen : boolean;
   theaterZoomLevel : number = 0.64; // make size 64% of original size to account for ViewPort oddness in Tesla Theater Mode.
@@ -23,7 +23,7 @@ export class AppComponent {
         {panelClass: 'fullscreen-snack'})
         .onAction()
         .subscribe(()=>{
-          location.href = 'https://youtube.com/redirect?q=https://testube.app';
+          location.href = 'https://youtube.com/redirect?q=https://tesla.mrrobotcloud.org';
         })
     } else if (navigator.userAgent.match(this.teslaUserAgentRegEx)) {
       this.isFullscreen = true;

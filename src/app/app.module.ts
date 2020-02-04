@@ -11,7 +11,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FooterComponent } from './elements/footer/footer.component';
 import { LogoComponent } from './elements/logo/logo.component';
 import { CardComponent } from './elements/card/card.component';
-import { DonateComponent } from './pages/donate/donate.component';
 import { DebugComponent } from './pages/debug/debug.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -32,7 +31,6 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     LogoComponent,
     CardComponent,
-    DonateComponent,
     DebugComponent,
   ],
   imports: [
