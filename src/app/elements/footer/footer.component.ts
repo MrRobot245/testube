@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { VERSION } from '../../../environments/version';
 import { DeviceDetectorService } from 'ngx-device-detector';
 
 @Component({
@@ -16,7 +15,6 @@ export class FooterComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.hash = VERSION.hash;
   }
 
 }

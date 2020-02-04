@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { VERSION } from '../../../environments/version';
+
 
 @Component({
   selector: 'app-debug',
@@ -7,8 +7,6 @@ import { VERSION } from '../../../environments/version';
   styleUrls: ['./debug.component.scss']
 })
 export class DebugComponent implements OnInit {
-  buildDate : string;
-  buildHash : string;
   userAgent : string;
   zoom : number;
   maxZoom : number;
@@ -18,8 +16,6 @@ export class DebugComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.buildDate = VERSION.date;
-    this.buildHash = VERSION.hash;
     this.userAgent = window.navigator.userAgent;
     this.maxZoom = 2.0;
     this.minZoom = 0;
