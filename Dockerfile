@@ -6,6 +6,6 @@ COPY . .
 
 RUN npm install && npm run ng build --prod
 
-FROM nginx:alpine
+FROM webdevops/apache:latest
 
-COPY --from=builder /app/dist/ /usr/share/nginx/html/
+COPY --from=builder /app/dist/ /app
